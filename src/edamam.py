@@ -9,12 +9,23 @@ Start of a basic Edamam interface library....
 """
 import configparser
 import requests
+import os
+from pathlib import Path
 
 #Open config file with app details
+home = str(Path.home())
+edamam_config_file = "c:\edamam.ini"
 edamam_config = configparser.RawConfigParser()
-edamam_config.read('../config/edamam.ini')
+
+print("path is "+edamam_config_file)
+if not os.path.isfile(edamam_config_file):
+    edamam_config_file = '../config/edamam.ini'
+
+edamam_config.read(edamam_config_file)
 
 config_recipe_api = edamam_config['RecipeAPI']
+
+#done grabbing edamam keys
 
 print("calling")
 #create request payload that includes the app id and key.
