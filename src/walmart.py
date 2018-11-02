@@ -4,7 +4,7 @@ Created on Thu Oct 25 18:00:42 2018
 
 @author: Greg Devine
 
-scratch file that will likely change offten.....  
+Basic start to looking up a UPC price. 
 
 """
 import configparser

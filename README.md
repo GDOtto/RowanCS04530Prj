@@ -16,6 +16,11 @@ These instructions will get you a copy of the project up and running on your loc
 pip install ConfigParser
 # Will need to be from 'WinPython Command Prompt' on Windows
 ```
+3. Python's requests-sml
+```
+pip install requests-xml
+# Will need to be from 'WinPython Command Prompt' on Windows
+```
 
 ### Important package uses
 
