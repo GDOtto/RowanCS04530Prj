@@ -7,41 +7,24 @@ Created on Thu Oct 25 18:00:42 2018
 scratch file that will likely change offten.....  
 
 """
-import configparser
-import requests
-import os
-from pathlib import Path
+import pyforms
+from   pyforms.basewidget import BaseWidget
+from   pyforms.controls import ControlText
+from   pyforms.controls import ControlButton
 
 #Open config file with app details
-home = str(Path.home())
-walmart_config_file = "c:\walmart.ini"
-walmart_config = configparser.RawConfigParser()
+class SimpleExample1(BaseWidget):
 
-print("path is "+walmart_config_file)
-if not os.path.isfile(walmart_config_file):
-    walmart_config_file = '../config/walmart.ini'
+    def __init__(self):
+        super(SimpleExample1,self).__init__('Simple example 1')
 
-walmart_config.read(walmart_config_file)
+        #Definition of the forms fields
+        self._firstname  = ControlText('First name', 'Default value')
+        self._middlename = ControlText('Middle name')
+        self._lastname   = ControlText('Lastname name')
+        self._fullname   = ControlText('Full name')
+        self._button     = ControlButton('Press this button')
 
-walmart_pricelookup_api = walmart_config['PriceLookup']
-
-#done grabbing edamam keys
-
-print("calling")
-payload = {'upc'       : '035000521019', 
-           'apiKey' : walmart_pricelookup_api['app_key']}
-r = requests.get('http://api.walmartlabs.com/v1/items', params=payload)
-print(r.status_code)
-print(r.headers['content-type'])
-print(r.encoding)
-#print(r.text)
-print(r.json())
-
-f=open("../data/sample_PriceLookupAPIResults.txt", "a+")
-try:
-    f.write("#######\r\n")
-    f.write(r.text)
-finally:
-    f.close()
-
+#Execute the application
+if __name__ == "__main__": pyforms.start_app( SimpleExample1 )
 
