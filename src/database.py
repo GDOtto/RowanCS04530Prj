@@ -22,14 +22,18 @@ cnx = mysql.connector.connect(user=config_db_user['username'],
                               database=config_db_con['database'])
 
 
-#Simple database connect and select right now.
-try:
-   cursor = cnx.cursor()
-   cursor.execute("""
-      select * from invoices
-   """)
-   result = cursor.fetchall()
-   print (result)
-finally:
-    cnx.close()
+if __name__ == "__main__":
+    #Test module
+    
+
+    #Simple database connect and select right now.
+    try:
+        cursor = cnx.cursor()
+        cursor.execute("""
+                       select * from recipes
+                       """)
+        result = cursor.fetchall()
+        print (result)
+    finally:
+            cnx.close()
 
