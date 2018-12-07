@@ -1,13 +1,20 @@
 /*
 Recipe API DB
 CS-4530
+
+DROP database Food;
+CREATE database food;
+
 */
+use food;
+
 
 DROP TABLE IF EXISTS `recipes` ;
 DROP TABLE IF EXISTS `ingredients` ;
 DROP TABLE IF EXISTS `directions` ;
 DROP TABLE IF EXISTS `nutrition` ;
 DROP TABLE IF EXISTS `shopping` ;
+
 
 CREATE TABLE recipes
 (
@@ -16,7 +23,7 @@ CREATE TABLE recipes
   servings	VARCHAR(50)     NOT NULL,
   category	VARCHAR(50)     NOT NULL,
   style		VARCHAR(50)     NOT NULL,
-  time		INT	0
+  time		INT
 );
 
 CREATE TABLE ingredients
@@ -32,9 +39,9 @@ CREATE TABLE ingredients
 CREATE TABLE directions
 (
   recipeID	INT,
-  step		INT		1,
+  step		INT,
   direction	VARCHAR(200)	NOT NULL,
-  CONSTRAINT `RecipeID`
+  CONSTRAINT `RecipeID2`
     FOREIGN KEY (`RecipeID`)
     REFERENCES `recipes` (`RecipeID`)
 );
@@ -43,12 +50,12 @@ CREATE TABLE nutrition
 (
   ingredientID	INT,
   name		VARCHAR(75)	NOT NULL,
-  qty		INT	0,
-  calories	INT	0,
-  fat		INT	0,
-  carb		INT	0,
-  fiber		INT	0,
-  sugar		INT	0,
+  qty		INT,
+  calories	INT,
+  fat		INT,
+  carb		INT,
+  fiber		INT,
+  sugar		INT,
   CONSTRAINT `ingredientID`
     FOREIGN KEY (`ingredientID`)
     REFERENCES `ingredients` (`ingredientID`)
@@ -57,10 +64,10 @@ CREATE TABLE nutrition
 CREATE TABLE shoppinh
 (
   ingredientID	INT,
-  qty		INT	0,
+  qty		INT,
   store		VARCHAR(0)	NOT NULL,
-  price		DOUBLE	0,
-  CONSTRAINT `ingredientID`
+  price		DOUBLE,
+  CONSTRAINT `ingredientID2`
     FOREIGN KEY (`ingredientID`)
     REFERENCES `ingredients` (`ingredientID`)
 );
