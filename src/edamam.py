@@ -10,6 +10,7 @@ Start of a basic Edamam interface library....
 import configparser
 import requests
 import os
+import io
 from pathlib import Path
 
 #Open config file with app details
@@ -38,7 +39,8 @@ def searchForRecipes(keyword):
     r = requests.get('https://api.edamam.com/search', params=payload)
 
     #dump to file to look at
-    f=open("../data/sample_RecipeAPISearchResults.txt", "a+")
+    f=io.open( "../data/sample_RecipeAPISearchResults.txt", "a+", encoding="utf-8")
+#    f=open("../data/sample_RecipeAPISearchResults.txt", "a+")
     try:
         f.write("#######\r\n")
         f.write(r.text)
