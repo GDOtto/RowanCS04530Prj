@@ -7,8 +7,14 @@ Created on Fri Dec  7 18:16:57 2018
 
 import database
 import edamam
+import json
 
 
-found_recipes = searchForRecipes('baked ziti')
+#found_recipes_text = edamam.searchForRecipes('baked ziti')
+found_recipes_json = edamam.searchForRecipes('baked ziti')
 
-print(found_recipes)
+#found_recipes_json = json.loads(found_recipes_text)
+
+print(found_recipes_json['q'])
+
+

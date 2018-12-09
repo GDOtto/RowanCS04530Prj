@@ -12,6 +12,7 @@ import requests
 import os
 import io
 from pathlib import Path
+import json
 
 #Open config file with app details
 home = str(Path.home())
@@ -48,8 +49,8 @@ def searchForRecipes(keyword):
     finally:
         f.close()
     
-    
-    return r.json
+
+    return json.loads(r.text)
 
 def searchForFood(keyword):
     print("calling")
@@ -72,8 +73,7 @@ def searchForFood(keyword):
     finally:
         f.close()
     
-    
-    return r.json
+    return json.loads(r.text)
     
 
 

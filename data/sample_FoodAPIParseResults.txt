@@ -660,4 +660,1328 @@
       "href" : "https://api.edamam.com/api/food-database/parser?session=40&ingr=1+can+diced+tomatoes&app_id=38f49717&app_key=e59825b63ad7880d6509c123b2afcbda"
     }
   }
+}#######
+{
+  "text" : "1 can diced tomatoes",
+  "parsed" : [ {
+    "food" : {
+      "foodId" : "food_bx8m5febc0jw58bd8s141awcwvnl",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_11885",
+      "label" : "Tomatoes, red, ripe, canned, packed in tomato juice, no salt added",
+      "nutrients" : {
+        "ENERC_KCAL" : 16.0,
+        "PROCNT" : 0.79,
+        "FAT" : 0.25,
+        "CHOCDF" : 3.47,
+        "FIBTG" : 1.9
+      },
+      "category" : "Generic foods",
+      "categoryLabel" : "food"
+    },
+    "quantity" : 1.0,
+    "measure" : {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_unit",
+      "label" : "Whole"
+    }
+  } ],
+  "hints" : [ {
+    "food" : {
+      "foodId" : "food_bx8m5febc0jw58bd8s141awcwvnl",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_11885",
+      "label" : "can diced tomato",
+      "nutrients" : {
+        "ENERC_KCAL" : 16.0,
+        "PROCNT" : 0.79,
+        "FAT" : 0.25,
+        "CHOCDF" : 3.47,
+        "FIBTG" : 1.9
+      },
+      "category" : "Generic foods",
+      "categoryLabel" : "food"
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_unit",
+      "label" : "Whole",
+      "qualified" : [ [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_medium",
+        "label" : "medium"
+      } ], [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_small",
+        "label" : "small"
+      } ], [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_large",
+        "label" : "large"
+      } ] ]
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+      "label" : "Cup"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_can",
+      "label" : "Can"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+      "label" : "Serving"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+      "label" : "Tablespoon"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_ay3hvlub87yz26ax7n5ita35au9e",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_11531",
+      "label" : "canned diced tomatoes",
+      "nutrients" : {
+        "ENERC_KCAL" : 16.0,
+        "PROCNT" : 0.79,
+        "FAT" : 0.25,
+        "CHOCDF" : 3.47,
+        "FIBTG" : 1.9
+      },
+      "category" : "Generic foods",
+      "categoryLabel" : "food"
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+      "label" : "Cup"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_can",
+      "label" : "Can"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_unit",
+      "label" : "Whole",
+      "qualified" : [ [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_small",
+        "label" : "small"
+      } ], [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_large",
+        "label" : "large"
+      } ], [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_medium",
+        "label" : "medium"
+      } ] ]
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+      "label" : "Tablespoon"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+      "label" : "Serving"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bqp9zivajvco0kby7k4xnalmxc4w",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_GMI_725342_26071_Canned_Diced_Tomatoes",
+      "label" : "Canned Diced Tomatoes",
+      "nutrients" : {
+        "ENERC_KCAL" : 23.076923076923077,
+        "PROCNT" : 0.7692307692307693,
+        "CHOCDF" : 4.615384615384616,
+        "FIBTG" : 0.7692307692307693
+      },
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : "ORGANIC TOMATOES; ORGANIC TOMATO JUICE; SEA SALT; CITRIC ACID AND CALCIUM CHLORIDE"
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+      "label" : "Serving"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+      "label" : "Cup"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_ayw414lazgwswna9fghjtb39iaxa",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45257448",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 16.0,
+        "PROCNT" : 0.8100000023841858,
+        "CHOCDF" : 3.25,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Kings Super Markets Inc",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_ahjila8bjydvbxa83jpb3ahe7dby",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45257016",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "CHOCDF" : 4.170000076293945,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Topco Associates, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " ORGANIC TOMATOES; ORGANIC TOMATO JUICE; SEA SALT; CALCIUM CHLORIDE; NATURALLY DERIVED CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bsjjaj0brcjg8obnm0pxsal127vr",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_INR_FP919445",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 18.518830023529716,
+        "PROCNT" : 0.8818490487395103,
+        "CHOCDF" : 3.5362148872846655,
+        "FIBTG" : 0.8818490487395103
+      },
+      "brand" : "Ahold USA, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : "Tomatoes With Juice; Water; Chopped Green Chili Peppers; Less Than 2% Of : Salt; Calcium Chloride; Citric Acid; Spice; Natural Flavor."
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+      "label" : "Cup"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bt1mtwqabfnraea8z6mgqb387jok",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45194303",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 16.0,
+        "PROCNT" : 0.7900000214576721,
+        "CHOCDF" : 3.1700000762939453,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Safeway, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " CUT TOMATOES; TOMATO JUICE AND LESS THAN 2% OF: GARLIC POWDER; SPICES; CALCIUM CHLORIDE; CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_apwj30paob93juazhylcpbkuvg6l",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45194122",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.130000114440918,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Big Y Foods, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: SALT; CALCIUM CHLORIDE; CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bytxabdb11tbuobc0fn4ua4d5dzi",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45088034",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 20.0,
+        "PROCNT" : 0.8100000023841858,
+        "CHOCDF" : 4.070000171661377,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Hirzel Canning Company",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; SEA SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_a5bovvdarjbkokbbkdarzasu13lj",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45198533",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.130000114440918,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "WAL-MART STORES, INC.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_ahfy8u9bjk6lbcacwo2z2arfk4kz",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45198290",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.130000114440918,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Hy-Vee, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: SALT; CALCIUM CHLORIDE; CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_brxvmskaomc6wbbu2yd7sb0x729h",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45196081",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 24.0,
+        "PROCNT" : 0.8100000023841858,
+        "CHOCDF" : 5.690000057220459,
+        "FIBTG" : 1.600000023841858
+      },
+      "brand" : "Schnuck Markets, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: CHILI PEPPERS; SPICES; SUGAR; DRIED ONIONS; SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_andvmsjaudw6p5bijyhx0alg6efs",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45317857",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.170000076293945,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Sierra Quality Canners",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " FIRE ROASTED TOMATOES*; TOMATO JUICE*; JALAPENO PEPPERS*; VINEGAR*; SEA SALT; NATURALLY DERIVED CITRIC ACID AND CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_aicmtv1a416s2jamzmfwqbzwh0v3",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_FF_HomeTown_Buffet_44512_Diced_Tomatoes",
+      "label" : "Diced Tomatoes",
+      "nutrients" : {
+        "ENERC_KCAL" : 33.333333333333336,
+        "CHOCDF" : 6.666666666666667
+      },
+      "brand" : "HomeTown Buffet",
+      "category" : "Fast foods",
+      "categoryLabel" : "meal"
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_byd4bf5b8xuapwbgu2ytoadz6ydr",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45218931",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 3.309999942779541,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Stater Bros. Markets Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; SALT; CALCIUM CHLORIDE; CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bjsdbckaujpan0bxv65kyb4qctdy",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45219468",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 267.0,
+        "PROCNT" : 13.329999923706055,
+        "CHOCDF" : 46.66999816894531,
+        "FIBTG" : 20.0
+      },
+      "brand" : "Wegmans Food Markets, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; SULPHUR; CITRIC ACID; GLUCOSE "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bslv9ajbulz1qeant1pmca5boujs",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45052519",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 22.0,
+        "PROCNT" : 0.8600000143051147,
+        "CHOCDF" : 4.309999942779541,
+        "FIBTG" : 0.8999999761581421
+      },
+      "brand" : "WEIS MARKETS, INC.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " DICED TOMATOES; TOMATO JUICE; SEA SALT; CALCIUM CHLORIDE; CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_a0tfywqbn3soyvboglhfpbuvekpo",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45054973",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.960000038146973,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Dollar Tree Stores, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; SALT; CITRIC ACID AND CALCIUM CHLORIDE "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_acmxc63aleunw5bubgsw9boqtnm8",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45330355",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 24.0,
+        "PROCNT" : 0.8100000023841858,
+        "CHOCDF" : 5.690000057220459,
+        "FIBTG" : 1.600000023841858
+      },
+      "brand" : "Central Grocers Co-Op, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: CHILI PEPPERS; SPICES; SUGAR; DRIED ONIONS; SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bifv4dhb6ybtg1b6ogchgbui9p08",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45057349",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "CHOCDF" : 4.170000076293945,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Topco Associates, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " ORGANIC TOMATOES; ORGANIC TOMATO JUICE; SEA SALT; CALCIUM CHLORIDE; NATURALLY DERIVED CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  } ],
+  "_links" : {
+    "next" : {
+      "title" : "Next page",
+      "href" : "https://api.edamam.com/api/food-database/parser?session=40&ingr=1+can+diced+tomatoes&app_id=38f49717&app_key=e59825b63ad7880d6509c123b2afcbda"
+    }
+  }
+}#######
+{
+  "text" : "1 can diced tomatoes",
+  "parsed" : [ {
+    "food" : {
+      "foodId" : "food_bx8m5febc0jw58bd8s141awcwvnl",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_11885",
+      "label" : "Tomatoes, red, ripe, canned, packed in tomato juice, no salt added",
+      "nutrients" : {
+        "ENERC_KCAL" : 16.0,
+        "PROCNT" : 0.79,
+        "FAT" : 0.25,
+        "CHOCDF" : 3.47,
+        "FIBTG" : 1.9
+      },
+      "category" : "Generic foods",
+      "categoryLabel" : "food"
+    },
+    "quantity" : 1.0,
+    "measure" : {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_unit",
+      "label" : "Whole"
+    }
+  } ],
+  "hints" : [ {
+    "food" : {
+      "foodId" : "food_bx8m5febc0jw58bd8s141awcwvnl",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_11885",
+      "label" : "can diced tomato",
+      "nutrients" : {
+        "ENERC_KCAL" : 16.0,
+        "PROCNT" : 0.79,
+        "FAT" : 0.25,
+        "CHOCDF" : 3.47,
+        "FIBTG" : 1.9
+      },
+      "category" : "Generic foods",
+      "categoryLabel" : "food"
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_unit",
+      "label" : "Whole",
+      "qualified" : [ [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_medium",
+        "label" : "medium"
+      } ], [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_small",
+        "label" : "small"
+      } ], [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_large",
+        "label" : "large"
+      } ] ]
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+      "label" : "Cup"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_can",
+      "label" : "Can"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+      "label" : "Serving"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+      "label" : "Tablespoon"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_ay3hvlub87yz26ax7n5ita35au9e",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_11531",
+      "label" : "canned diced tomatoes",
+      "nutrients" : {
+        "ENERC_KCAL" : 16.0,
+        "PROCNT" : 0.79,
+        "FAT" : 0.25,
+        "CHOCDF" : 3.47,
+        "FIBTG" : 1.9
+      },
+      "category" : "Generic foods",
+      "categoryLabel" : "food"
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+      "label" : "Cup"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_can",
+      "label" : "Can"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_unit",
+      "label" : "Whole",
+      "qualified" : [ [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_small",
+        "label" : "small"
+      } ], [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_large",
+        "label" : "large"
+      } ], [ {
+        "uri" : "http://www.edamam.com/ontologies/edamam.owl#Qualifier_medium",
+        "label" : "medium"
+      } ] ]
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+      "label" : "Tablespoon"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+      "label" : "Serving"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bqp9zivajvco0kby7k4xnalmxc4w",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_GMI_725342_26071_Canned_Diced_Tomatoes",
+      "label" : "Canned Diced Tomatoes",
+      "nutrients" : {
+        "ENERC_KCAL" : 23.076923076923077,
+        "PROCNT" : 0.7692307692307693,
+        "CHOCDF" : 4.615384615384616,
+        "FIBTG" : 0.7692307692307693
+      },
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : "ORGANIC TOMATOES; ORGANIC TOMATO JUICE; SEA SALT; CITRIC ACID AND CALCIUM CHLORIDE"
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+      "label" : "Serving"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+      "label" : "Cup"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_ahfy8u9bjk6lbcacwo2z2arfk4kz",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45198290",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.130000114440918,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Hy-Vee, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: SALT; CALCIUM CHLORIDE; CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_brxvmskaomc6wbbu2yd7sb0x729h",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45196081",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 24.0,
+        "PROCNT" : 0.8100000023841858,
+        "CHOCDF" : 5.690000057220459,
+        "FIBTG" : 1.600000023841858
+      },
+      "brand" : "Schnuck Markets, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: CHILI PEPPERS; SPICES; SUGAR; DRIED ONIONS; SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_a5bovvdarjbkokbbkdarzasu13lj",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45198533",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.130000114440918,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "WAL-MART STORES, INC.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_ayw414lazgwswna9fghjtb39iaxa",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45257448",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 16.0,
+        "PROCNT" : 0.8100000023841858,
+        "CHOCDF" : 3.25,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Kings Super Markets Inc",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_ahjila8bjydvbxa83jpb3ahe7dby",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45257016",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "CHOCDF" : 4.170000076293945,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Topco Associates, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " ORGANIC TOMATOES; ORGANIC TOMATO JUICE; SEA SALT; CALCIUM CHLORIDE; NATURALLY DERIVED CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bytxabdb11tbuobc0fn4ua4d5dzi",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45088034",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 20.0,
+        "PROCNT" : 0.8100000023841858,
+        "CHOCDF" : 4.070000171661377,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Hirzel Canning Company",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; SEA SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bt1mtwqabfnraea8z6mgqb387jok",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45194303",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 16.0,
+        "PROCNT" : 0.7900000214576721,
+        "CHOCDF" : 3.1700000762939453,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Safeway, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " CUT TOMATOES; TOMATO JUICE AND LESS THAN 2% OF: GARLIC POWDER; SPICES; CALCIUM CHLORIDE; CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_apwj30paob93juazhylcpbkuvg6l",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45194122",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.130000114440918,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Big Y Foods, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: SALT; CALCIUM CHLORIDE; CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bsjjaj0brcjg8obnm0pxsal127vr",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_INR_FP919445",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 18.518830023529716,
+        "PROCNT" : 0.8818490487395103,
+        "CHOCDF" : 3.5362148872846655,
+        "FIBTG" : 0.8818490487395103
+      },
+      "brand" : "Ahold USA, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : "Tomatoes With Juice; Water; Chopped Green Chili Peppers; Less Than 2% Of : Salt; Calcium Chloride; Citric Acid; Spice; Natural Flavor."
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+      "label" : "Cup"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_aicmtv1a416s2jamzmfwqbzwh0v3",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_FF_HomeTown_Buffet_44512_Diced_Tomatoes",
+      "label" : "Diced Tomatoes",
+      "nutrients" : {
+        "ENERC_KCAL" : 33.333333333333336,
+        "CHOCDF" : 6.666666666666667
+      },
+      "brand" : "HomeTown Buffet",
+      "category" : "Fast foods",
+      "categoryLabel" : "meal"
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_andvmsjaudw6p5bijyhx0alg6efs",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45317857",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.170000076293945,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Sierra Quality Canners",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " FIRE ROASTED TOMATOES*; TOMATO JUICE*; JALAPENO PEPPERS*; VINEGAR*; SEA SALT; NATURALLY DERIVED CITRIC ACID AND CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bslv9ajbulz1qeant1pmca5boujs",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45052519",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 22.0,
+        "PROCNT" : 0.8600000143051147,
+        "CHOCDF" : 4.309999942779541,
+        "FIBTG" : 0.8999999761581421
+      },
+      "brand" : "WEIS MARKETS, INC.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " DICED TOMATOES; TOMATO JUICE; SEA SALT; CALCIUM CHLORIDE; CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_b5nae04bdtzvhaaz6kph0b1n9mxx",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45004902",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.130000114440918,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "The Moran Group Incorporated",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " DICED TOMATOES; TOMATO JUICE; SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_a0tfywqbn3soyvboglhfpbuvekpo",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45054973",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.960000038146973,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Dollar Tree Stores, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; SALT; CITRIC ACID AND CALCIUM CHLORIDE "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_acmxc63aleunw5bubgsw9boqtnm8",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45330355",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 24.0,
+        "PROCNT" : 0.8100000023841858,
+        "CHOCDF" : 5.690000057220459,
+        "FIBTG" : 1.600000023841858
+      },
+      "brand" : "Central Grocers Co-Op, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: CHILI PEPPERS; SPICES; SUGAR; DRIED ONIONS; SALT; CITRIC ACID; CALCIUM CHLORIDE. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_bifv4dhb6ybtg1b6ogchgbui9p08",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45057349",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "CHOCDF" : 4.170000076293945,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Topco Associates, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " ORGANIC TOMATOES; ORGANIC TOMATO JUICE; SEA SALT; CALCIUM CHLORIDE; NATURALLY DERIVED CITRIC ACID. "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  }, {
+    "food" : {
+      "foodId" : "food_a9mekgjbltowneazyd94ua9x71od",
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Food_USDABR_45265251",
+      "label" : "DICED TOMATOES",
+      "nutrients" : {
+        "ENERC_KCAL" : 21.0,
+        "PROCNT" : 0.8299999833106995,
+        "CHOCDF" : 4.130000114440918,
+        "FIBTG" : 0.800000011920929
+      },
+      "brand" : "Topco Associates, Inc.",
+      "category" : "Packaged foods",
+      "categoryLabel" : "food",
+      "foodContentsLabel" : " TOMATOES; TOMATO JUICE; LESS THAN 2% OF: CALCIUM CHLORIDE; CITRIC ACID "
+    },
+    "measures" : [ {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+      "label" : "Gram"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+      "label" : "Ounce"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+      "label" : "Pound"
+    }, {
+      "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+      "label" : "Kilogram"
+    } ]
+  } ],
+  "_links" : {
+    "next" : {
+      "title" : "Next page",
+      "href" : "https://api.edamam.com/api/food-database/parser?session=40&ingr=1+can+diced+tomatoes&app_id=38f49717&app_key=e59825b63ad7880d6509c123b2afcbda"
+    }
+  }
 }
