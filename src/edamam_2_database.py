@@ -10,7 +10,7 @@ Start of a basic Edamam interface library....
 import configparser
 import requests
 import os
-import io
+#import io
 from pathlib import Path
 import json
 import mysql.connector
@@ -30,7 +30,7 @@ config_recipe_api = edamam_config['RecipeAPI']
 config_food_api = edamam_config['FoodAPI']
 
 def searchForRecipes(keyword):
-    print("calling")
+    print("Calling Recipe Search API...")
     #create request payload that includes the app id and key.
     # this is a search and reference the Search call 
     # more details here https://developer.edamam.com/edamam-docs-recipe-api
@@ -40,21 +40,11 @@ def searchForRecipes(keyword):
     
     #use requests library
     r = requests.get('https://api.edamam.com/search', params=payload)
-
-    #dump to file to look at
-    f=io.open( "../data/sample_RecipeAPISearchResults.txt", "a+", encoding="utf-8")
-#    f=open("../data/sample_RecipeAPISearchResults.txt", "a+")
-    try:
-        f.write("#######\r\n")
-        f.write(r.text)
-    finally:
-        f.close()
-    
-
+    print("HTTP Call Status: ",r.status_code,"\n")
     return json.loads(r.text)
 
 def searchForFood(keyword):
-    print("Calling Food API")
+    print("Calling Food API...")
     #create request payload that includes the app id and key.
     # this is a search and reference the Search call 
     # more details here https://developer.edamam.com/edamam-docs-recipe-api
@@ -65,19 +55,10 @@ def searchForFood(keyword):
     #use requests library
     r = requests.get('https://api.edamam.com/api/food-database/parser', params=payload)
     print("HTTP Call Status: ",r.status_code,"\n")
-
-    #dump to file to look at
-#    f=io.open( "../data/sample_FoodAPIParseResults.txt", "a+", encoding="utf-8")
-#    f=open("../data/sample_RecipeAPISearchResults.txt", "a+")
-#    try:
-#        f.write("#######\r\n")
-#        f.write(r.text)
-#    finally:
-#        f.close()
-    
     return json.loads(r.text)
 
 def insertdatabase(jsonResult,apiType):
+    print("Opening Database Connection to Food...")
     db_config = configparser.RawConfigParser()
     db_config.read('../config/db.ini')
 
@@ -88,10 +69,11 @@ def insertdatabase(jsonResult,apiType):
                                   password=config_db_user['password'],
                                   host=config_db_con['host'],
                                   database=config_db_con['database'])
+    
     if apiType == "food":
+        print("Parsing Ingredients for nutrition Table...")
         for items in jsonResult['parsed']:
-            print(items['food']['label'])
-            print(items['food']['nutrients'])
+            print("Food: " + items['food']['label'])
             ENERC_KCAL = 0
             CHOCDF = 0
             FAT = 0
@@ -99,38 +81,38 @@ def insertdatabase(jsonResult,apiType):
             PROCNT = 0
             for nutrients in items['food']['nutrients']:
                 if nutrients == 'ENERC_KCAL':
-                    print("Energy : ", items['food']['nutrients']['ENERC_KCAL'])
+                    print("  Energy : ", items['food']['nutrients']['ENERC_KCAL'])
                     ENERC_KCAL = items['food']['nutrients']['ENERC_KCAL']
                 elif nutrients == 'CHOCDF':
-                    print("Carbs : ", items['food']['nutrients']['CHOCDF'])
+                    print("  Carbs : ", items['food']['nutrients']['CHOCDF'])
                     CHOCDF = items['food']['nutrients']['CHOCDF']
                 elif nutrients == 'FAT':
-                    print("Fat : ", items['food']['nutrients']['FAT'])
+                    print("  Fat : ", items['food']['nutrients']['FAT'])
                     FAT = items['food']['nutrients']['FAT']
                 elif nutrients == 'FIBTG':
-                    print("Fiber : ", items['food']['nutrients']['FIBTG'])
+                    print("  Fiber : ", items['food']['nutrients']['FIBTG'])
                     FIBTG = items['food']['nutrients']['FIBTG']
                 elif nutrients == 'PROCNT':
-                    print("Protien : ", items['food']['nutrients']['PROCNT'])
+                    print("  Protien : ", items['food']['nutrients']['PROCNT'])
                     PROCNT = items['food']['nutrients']['PROCNT']
                 else:
                     print("Nutrient Missing: ", nutrients)
-            print(" ")
-            try:
-                print("Inserting to ingredients Database")
-                cursor = cnx.cursor()
-                str = 
-                cursor.execute("",str """)
-#        try:
-#            print("Food API Call")
-#            cursor = cnx.cursor()
-#            cursor.execute("""
-#                           select * from nutrition
-#                           """)
-#            result = cursor.fetchall()
-#            print (result)
-#        finally:
+            print("Inserting ingredients to nutrition Table...")
+            cursor = cnx.cursor()
+            ingred_no = cursor.lastrowid
+            add_ingred = ("INSERT INTO nutrition "
+                          "(ingredientID, name, Energy_kcal, Carbs_g, Fat_g, Fiber_g, Protien_g) "
+                          "VALUES (%s, %s, %s, %s, %s, %s, %s)")
+            data_ingred = (ingred_no, (items['food']['label']), ENERC_KCAL,CHOCDF,FAT,FIBTG,PROCNT)
+            cursor.execute(add_ingred, data_ingred)     
+        #END for items in jsonResult['parsed']:         
+        cnx.commit()
+        print("Committed Changes to nutrition Table...")
+    #END if apiType == "food":
+               
+    cursor.close()
     cnx.close()
+    print ("Closed Database Connection to Food...")             
                 
 
 if __name__ == "__main__":
