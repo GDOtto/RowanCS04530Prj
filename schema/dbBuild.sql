@@ -18,11 +18,9 @@ DROP TABLE IF EXISTS `recipes` ;
 CREATE TABLE recipes
 (
   recipeID	INT	PRIMARY KEY   AUTO_INCREMENT,
-  name		VARCHAR(50)     NOT NULL,
+  RecName		VARCHAR(50)     NOT NULL,
   servings	VARCHAR(50)     NOT NULL,
-  category	VARCHAR(50)     NOT NULL,
-  style		VARCHAR(50)     NOT NULL,
-  time		INT
+  diet	VARCHAR(50)     NOT NULL
 );
 
 CREATE TABLE nutrition
@@ -38,6 +36,7 @@ CREATE TABLE nutrition
 
 CREATE TABLE ingredients
 (
+<<<<<<< HEAD
   ingredientID	INT,
   recipeID		INT,
   qty			FLOAT,
@@ -47,18 +46,26 @@ CREATE TABLE ingredients
   CONSTRAINT `ingredientID`
     FOREIGN KEY (`ingredientID`)
     REFERENCES `nutrition` (`ingredientID`)
+=======
+  nutritiantID		INT,
+  recipeID		INT,
+  qty			double
+>>>>>>> 84acf03b933baaf98e1f7a21a3f62e1e4d38f90c
 );
 
-CREATE TABLE directions
+CREATE TABLE nutritiant
 (
-  recipeID	INT,
-  step		INT,
-  direction	VARCHAR(200)	NOT NULL,
-  CONSTRAINT `RecipeID2`
-    FOREIGN KEY (`RecipeID`)
-    REFERENCES `recipes` (`RecipeID`)
+  nutritiantID	INT	PRIMARY KEY	AUTO_INCREMENT,
+  FoodName		VARCHAR(75)	NOT NULL,
+  calories	double,
+  fat		double,
+  carb		double,
+  fiber		double,
+  protein	double,
+  UPC		varchar(12)
 );
 
+<<<<<<< HEAD
 
 CREATE TABLE shopping
 (
@@ -69,4 +76,11 @@ CREATE TABLE shopping
   CONSTRAINT `ingredientID2`
     FOREIGN KEY (`ingredientID`)
     REFERENCES `ingredients` (`ingredientID`)
+=======
+CREATE TABLE shopping
+(
+  UPC		varchar(12) PRIMARY KEY,
+  qty		double,
+  price		double
+>>>>>>> 84acf03b933baaf98e1f7a21a3f62e1e4d38f90c
 );
