@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+config/db.ini
+config/db.ini
+config/edamam.ini
