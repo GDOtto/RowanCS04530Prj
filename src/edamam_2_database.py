@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 import json
 import mysql.connector
+import time
 
 #Open config file with app details
 home = str(Path.home())
@@ -30,7 +31,7 @@ config_recipe_api = edamam_config['RecipeAPI']
 config_food_api = edamam_config['FoodAPI']
 
 def searchForRecipes(keyword):
-    print("Calling Recipe Search API...")
+    print("Calling Recipe API...")
     #create request payload that includes the app id and key.
     # this is a search and reference the Search call 
     # more details here https://developer.edamam.com/edamam-docs-recipe-api
@@ -47,7 +48,7 @@ def searchForFood(keyword):
     print("Calling Food API...")
     #create request payload that includes the app id and key.
     # this is a search and reference the Search call 
-    # more details here https://developer.edamam.com/edamam-docs-recipe-api
+    # more details here https://developer.edamam.com/food-database-api-docs
     payload = {'ingr'           : keyword, 
                'app_id'         : config_food_api['app_id'], 
                'app_key'        : config_food_api['app_key']}
@@ -57,8 +58,8 @@ def searchForFood(keyword):
     print("HTTP Call Status: ",r.status_code,"\n")
     return json.loads(r.text)
 
-def insertdatabase(jsonResult,apiType):
-    print("Opening Database Connection to Food...")
+def insertdatabase(jsonResult,dbType):
+    print("Opening MySQL Connection to Food Database...")
     db_config = configparser.RawConfigParser()
     db_config.read('../config/db.ini')
 
@@ -70,8 +71,31 @@ def insertdatabase(jsonResult,apiType):
                                   host=config_db_con['host'],
                                   database=config_db_con['database'])
     
-    if apiType == "food":
-        print("Parsing Ingredients for nutrition Table...")
+        
+    if dbType == 'recipe':
+        print("Parsing Recipe Table...")
+        recipe = jsonResult['hits'][0]['recipe']
+        print("Recipe Name: ", recipe['label'])
+        print("Recipe Servings: ", recipe['yield'])
+        if len(recipeJSON['hits'][0]['recipe']['dietLabels']) != 0:
+            print("Recipe Diet: ", recipe['dietLabels'][0])
+            DIETLABEL = recipe['dietLabels'][0]
+        else:
+            DIETLABEL = "NULL"
+        print("Inserting data to Recipes Table...")
+        cursor = cnx.cursor()
+        lastrowid = cursor.lastrowid
+        add_recipe = ("INSERT INTO recipes "
+                      "(recipeID, recipeName, servings, diet) "
+                      "VALUES (%s, %s, %s, %s)")
+        data_recipe = (lastrowid, (recipe['label']), (recipe['yield']), DIETLABEL)
+        cursor.execute(add_recipe, data_recipe)           
+        cnx.commit()        
+        lastrowid = cursor.lastrowid
+        print("Committed Changes to Recipe Table...")
+    #END if apiType == "recipe":
+    elif dbType == "nutrient":
+        print("Parsing Nutrition Table...")
         for items in jsonResult['parsed']:
             print("Food: " + items['food']['label'])
             ENERC_KCAL = 0
@@ -97,28 +121,58 @@ def insertdatabase(jsonResult,apiType):
                     PROCNT = items['food']['nutrients']['PROCNT']
                 else:
                     print("Nutrient Missing: ", nutrients)
-            print("Inserting ingredients to nutrition Table...")
+            print("Inserting data to Nutrition Table...")
             cursor = cnx.cursor()
-            ingred_no = cursor.lastrowid
-            add_ingred = ("INSERT INTO nutrition "
-                          "(ingredientID, name, Energy_kcal, Carbs_g, Fat_g, Fiber_g, Protien_g) "
-                          "VALUES (%s, %s, %s, %s, %s, %s, %s)")
-            data_ingred = (ingred_no, (items['food']['label']), ENERC_KCAL,CHOCDF,FAT,FIBTG,PROCNT)
+            lastrowid = cursor.lastrowid
+            add_ingred = ("INSERT INTO nutrients "
+                          "(nutrientID, foodName, calories, carbs, fat, fiber, protein, UPC) "
+                          "VALUES (%s, %s, %s, %s, %s, %s, %s, %s)")
+            data_ingred = (lastrowid, (items['food']['label']), ENERC_KCAL,CHOCDF,FAT,FIBTG,PROCNT,"NULL")
             cursor.execute(add_ingred, data_ingred)     
         #END for items in jsonResult['parsed']:         
         cnx.commit()
-        print("Committed Changes to nutrition Table...")
+        lastrowid = cursor.lastrowid
+        print("Committed Changes to Nutrition Table...")
     #END if apiType == "food":
-               
+    elif dbType == "ingredient":
+        print("Inserting data to Ingredient Table...")
+        cursor = cnx.cursor()
+        lastrowid = cursor.lastrowid
+        add_ingred = ("INSERT INTO ingredients "
+                      "(nutrientID, recipeID, foodQty) "
+                      "VALUES (%s, %s, %s)")
+        data_ingred = ((jsonResult['nutrientID']), (jsonResult['recipeID']), (jsonResult['qty']))
+        cursor.execute(add_ingred, data_ingred)           
+        cnx.commit()        
+        lastrowid = cursor.lastrowid
+        print("Committed Changes to Ingredient Table...")         
+    #END if apiType == "food":       
     cursor.close()
     cnx.close()
-    print ("Closed Database Connection to Food...")             
+    print ("Closed Database Connection to Food...")          
+    return lastrowid
                 
 
-if __name__ == "__main__":
-    #Test module
+if __name__ == "__main__": 
+    recipeJSON = searchForRecipes("Aromatic Christmas Ham")
+    recipeID = insertdatabase(recipeJSON,"recipe")
+    listIngred = recipeJSON['hits'][0]['recipe']['ingredients']
+    for ingred in listIngred:
+        foodJSON = searchForFood(ingred['text'])
+        nutrientID = insertdatabase(foodJSON,"nutrient")    
+        IngredDict = {"recipeID" : recipeID, "nutrientID" : nutrientID, "qty" : ingred['weight']}
+        IngedID = insertdatabase(IngredDict,"ingredient")  
+        time.sleep(2)  
+        print("!!!Done!!!")
     
-    #searchForRecipes("duck")
-    foodJSON = searchForFood("chocolate")
-    insertdatabase(foodJSON,"food")
+    recipeJSON = searchForRecipes("Figgy Pudding")
+    recipeID = insertdatabase(recipeJSON,"recipe")
+    listIngred = recipeJSON['hits'][0]['recipe']['ingredients']
+    for ingred in listIngred:
+        foodJSON = searchForFood(ingred['text'])
+        nutrientID = insertdatabase(foodJSON,"nutrient")    
+        IngredDict = {"recipeID" : recipeID, "nutrientID" : nutrientID, "qty" : ingred['weight']}
+        IngedID = insertdatabase(IngredDict,"ingredient")  
+        time.sleep(2)    
+    print("!!!Done!!!")
 

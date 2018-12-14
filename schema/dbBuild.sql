@@ -1,6 +1,6 @@
 
 #Recipe API DB
-#CS-4530
+#CS-4CREATE DATABASE `food` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
 
 #DROP database Food;
 #CREATE database food;
@@ -22,9 +22,9 @@ CREATE TABLE recipes
 
 CREATE TABLE ingredients
 (
-  nutrientID  INT REFERENCES nutrients(nutrientID),
-  recipeID	  INT REFERENCES recipes(recipeID),
-  foodQty     DOUBLE
+  nutrientID  	INT REFERENCES nutrients(nutrientID),
+  recipeID	  	INT REFERENCES recipes(recipeID),
+  foodQty     	DOUBLE
 );
 
 CREATE TABLE nutrients
