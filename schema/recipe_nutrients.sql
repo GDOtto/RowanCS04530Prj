@@ -31,5 +31,7 @@ CREATE OR REPLACE VIEW `food`.`recipe_nutrients` AS
             ((`r`.`recipeID` = `i`.`recipeID`)
                 AND (`i`.`nutrientID` = `n`.`nutrientID`))
         GROUP BY `r`.`recipeName`) `groupednutrients`;
+        
+use food;
 
-#SELECT * FROM food.recipe_nutrients;
+SELECT * FROM `food`.`recipe_nutrients`;
