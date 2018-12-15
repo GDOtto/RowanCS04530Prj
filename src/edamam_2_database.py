@@ -167,7 +167,6 @@ def load_Recipe(Recipe_Name):
     ################ END INTERNAL FUNCTION DEFS ################
                 
     #Open config file with app details
-    #home = str(Path.home())
     edamam_config_file = "c:\edamam.ini"
     edamam_config = configparser.RawConfigParser()
     
@@ -180,11 +179,13 @@ def load_Recipe(Recipe_Name):
     config_recipe_api = edamam_config['RecipeAPI']
     config_food_api = edamam_config['FoodAPI']
     
+    #Search for Recipe on Edamam API and insert into database (unless already in database)
     recipeJSON = searchForRecipes(Recipe_Name)
     recipeID = insertdatabase(recipeJSON,"recipe")
     if recipeID == 0:
         print("The recipe is already in the database, Skipping!!")
     else:
+        # Step through list of ingredients and add then to the nutrition and ingredients databases
         listIngred = recipeJSON['hits'][0]['recipe']['ingredients']
         for ingred in listIngred:
             foodJSON = searchForFood(ingred['text'])
