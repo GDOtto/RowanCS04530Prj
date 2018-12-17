@@ -6,7 +6,7 @@ UPDATE nutrients SET UPC="078742101323" WHERE nutrientID = "4";
 UPDATE nutrients SET UPC="078742131795" WHERE nutrientID = "5";
 UPDATE nutrients SET UPC="078742254463" WHERE nutrientID = "6";
 UPDATE nutrients SET UPC="072412010175" WHERE nutrientID = "7";
-UPDATE nutrients SET UPC="044700072615" WHERE nutrientID = "8";
+UPDATE nutrients SET UPC="047117086107" WHERE nutrientID = "8";
 -- UPDATE nutrients SET UPC="" WHERE nutrientID = "9";
 UPDATE nutrients SET UPC="089836184665" WHERE nutrientID = "10";
 UPDATE nutrients SET UPC="016000106109" WHERE nutrientID = "11";
@@ -22,5 +22,5 @@ UPDATE nutrients SET UPC="074265001577" WHERE nutrientID = "20";
 UPDATE nutrients SET UPC="044000000578" WHERE nutrientID = "21";
 UPDATE nutrients SET UPC="089836184290" WHERE nutrientID = "22";
 UPDATE nutrients SET UPC="042563009762" WHERE nutrientID = "23";
-UPDATE nutrients SET UPC="113102857967" WHERE nutrientID = "24";
+UPDATE nutrients SET UPC="742365004346" WHERE nutrientID = "24";
 select * FROM nutrients
